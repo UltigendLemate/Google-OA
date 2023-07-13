@@ -41,7 +41,7 @@ Sample Output 1: 108
 Sample Input 2: 16 7 ppzfsncqyzmuwrcv\
 Sample Output 2: 1680
 
-Find the code [here](/test.cpp)
+Find the code [here](https://github.com/UltigendLemate/Google-OA/blob/main/q1.cpp)
 
 ---
 
@@ -112,7 +112,7 @@ Sample Output 2:\
 30242\
 288757998
 
-You can find the code [here]()
+You can find the code [here](https://github.com/UltigendLemate/Google-OA/blob/main/q2.cpp)
 
 
 
