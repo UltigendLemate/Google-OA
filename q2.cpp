@@ -9,28 +9,28 @@ int z=1e9+7;
 
 //okay so rg is a 2d vector whose i th row indicates all numbers (from 1 to 1000 because of constraints) jinka sum of digits is i
 
-int rec(int level,int last)
+int f(int i,int last)
 {
-    if(level==n)
+    if(i==n)
     {
         return 1; //agar end tak agye ho toh 1 lejao
     }
 
-    if(dp[level][last]!=-1)
-    return dp[level][last]; //standard memoization
+    if(dp[i][last]!=-1)
+    return dp[i][last]; //standard memoization
 
     int ans=0;
 
-    for(auto it:rg[s[level]])
+    for(auto it:rg[s[i]])
     {
-        if(it>last) //agar pichle vale se bada hai toh ye uthalo aur aage lejao level aur agla element dhundo
+        if(it>last) //agar pichle vale se bada hai toh ye uthalo aur aage lejao i aur agla element dhundo
         {
-            ans+=rec(level+1,it);
+            ans+=f(i+1,it);
             ans%=z; // remainder by mod, standard
         }
     }
     ans%=z; // standard mod remainder
-    return dp[level][last]=ans;
+    return dp[i][last]=ans;
 }
  
 void solve(){
@@ -50,7 +50,7 @@ void solve(){
         }
     }
 
-    int ans=rec(0,0); //dp lagake ans leke ao
+    int ans=f(0,0); //dp lagake ans leke ao
     cout<<ans<<"\n";
 }
  
