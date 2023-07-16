@@ -118,6 +118,11 @@ You can find the code [here](https://github.com/UltigendLemate/Google-OA/blob/ma
 
 
 
+### You can have a look at the questions asked from IGDTUW girls as well. I could somehow collect the questions and some answers. I have no guarantee that those answers are correct. But still you can take an overview!
+
+
+
+
 
 
 
